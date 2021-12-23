@@ -3,7 +3,6 @@ import torch
 import numpy as np
 print(torch.__version__)
 print('Hello World!')
-
 print(f'Cuda version?:{torch.version.cuda}')
 print(f'Cudnn version?:{torch.backends.cudnn.version()}')
 print(f'Cuda available?: {torch.cuda.is_available()}')
