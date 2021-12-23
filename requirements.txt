@@ -7,12 +7,12 @@ scipy==1.7.3
 seaborn==0.11.2
 plotly==5.5.0
 statsmodels==0.13.1
-tensorboard==
+tensorboard==2.7.0
 tensorflow-gpu==1.15
 umap-learn==0.5.2
 xds==0.1.8
 cookiecutter==1.7.3
+#torch==1.10.1+cu113
+#torchvision==0.11.2+cu113
+#torchaudio===0.10.1+cu113
 git+git://github.com/ahwillia/netrep@main#egg=netrep
-torch==1.10.1+cu113
-torchvision==0.11.2+cu113
-torchaudio===0.10.1+cu113
