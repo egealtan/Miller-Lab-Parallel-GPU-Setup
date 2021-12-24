@@ -1,4 +1,3 @@
-#python==3.9.7
 h5py==3.6.0
 jupyterlab==3.2.5
 pandas==1.3.5
@@ -12,10 +11,7 @@ tensorboard==2.7.0 # this version conflicts with TF 1.15
 umap-learn==0.5.2
 xds==0.1.8
 cookiecutter==1.7.3
-#torch==1.10.1+cu113
-#torchvision==0.11.2+cu113
-#torchaudio===0.10.1+cu113
 geotorch==0.3.0
-#A.H.Williams' commit on December 13 is used. If want to use master branch:
+#For netrep, A.H.Williams' commit on December 13 is used. If you want to use master branch:
 #git+git://github.com/ahwillia/netrep@master#egg=netrep 
 git+git://github.com/ahwillia/netrep@bc98a59f60aa87eef0935fff8bf7708d354935be#egg=netrep
