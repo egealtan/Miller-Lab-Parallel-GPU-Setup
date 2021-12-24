@@ -39,8 +39,14 @@ cca_metric.fit(X, X)
 dist = cca_metric.score(X, X)
 
 print(f"Distance between X and X is: {dist}")
+# %%
 
 # %%
+
+# %%
+
+# %%
+
 
 import matplotlib.pyplot as plt
 plt.plot([1,2,3],[2,3,5])
@@ -60,22 +66,18 @@ file2.close()
 
 aa = 3
 
+# %%
 
-
-# import torch
-# import numpy as np
-# print(torch.__version__)
-# print('Hello World!')
-# print(f'Cuda version?:{torch.version.cuda}')
-# print(f'Cudnn version?:{torch.backends.cudnn.version()}')
-# print(f'Cuda available?: {torch.cuda.is_available()}')
-# print(f'Current device?: {torch.cuda.current_device()}')
-# print(f'Device count?: {torch.cuda.torch.cuda.device_count()}')
-# print(f'Device name?: {torch.cuda.get_device_name(0)}')
-
-# aa = 3
-# import tensorflow as tf
-# print(tf.__version__)
+import torch
+import numpy as np
+print(torch.__version__)
+print('Hello World!')
+print(f'Cuda version?:{torch.version.cuda}')
+print(f'Cudnn version?:{torch.backends.cudnn.version()}')
+print(f'Cuda available?: {torch.cuda.is_available()}')
+print(f'Current device?: {torch.cuda.current_device()}')
+print(f'Device count?: {torch.cuda.torch.cuda.device_count()}')
+print(f'Device name?: {torch.cuda.get_device_name(0)}')
 
 
 
