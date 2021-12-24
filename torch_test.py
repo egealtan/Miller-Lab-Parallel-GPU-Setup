@@ -1,4 +1,46 @@
 # %%
+from netrep.metrics import LinearMetric
+
+# Rotationally invariant metric (fully regularized).
+proc_metric = LinearMetric(alpha=1.0, center_columns=True)
+
+# Linearly invariant metric (no regularization).
+cca_metric = LinearMetric(alpha=0.0, center_columns=True)
+
+# %%
+# Given
+# -----
+# X : ndarray, (num_samples x num_neurons), activations from first network.
+#
+# Y : ndarray, (num_samples x num_neurons), activations from second network.
+#
+# metric : an instance of LinearMetric(...)
+
+# Fit alignment transformations.
+import numpy as np
+X = np.arange(50).reshape(10,5)
+
+Y = np.random.normal(0,5000,50)
+Y = Y.reshape(10,5)
+
+print(f"X.shape: {X.shape}")
+print(f"Y.shape: {Y.shape}")
+
+cca_metric.fit(X, Y)
+
+# Evaluate distance between X and Y, using alignments fit above.
+dist = cca_metric.score(X, Y)
+
+print(f"Distance between X and Y is: {dist}")
+
+cca_metric.fit(X, X)
+
+# Evaluate distance between X and Y, using alignments fit above.
+dist = cca_metric.score(X, X)
+
+print(f"Distance between X and X is: {dist}")
+
+# %%
 
 import matplotlib.pyplot as plt
 plt.plot([1,2,3],[2,3,5])

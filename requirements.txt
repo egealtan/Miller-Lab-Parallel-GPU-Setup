@@ -7,12 +7,15 @@ scipy==1.7.3
 seaborn==0.11.2
 plotly==5.5.0
 statsmodels==0.13.1
-# tensorboard==2.7.0 # this version conflicts with TF
-tensorflow-gpu==1.15
+tensorboard==2.7.0 # this version conflicts with TF 1.15
+# tensorflow-gpu==1.15 not needed for now
 umap-learn==0.5.2
 xds==0.1.8
 cookiecutter==1.7.3
 #torch==1.10.1+cu113
 #torchvision==0.11.2+cu113
 #torchaudio===0.10.1+cu113
-#git+git://github.com/ahwillia/netrep@main#egg=netrep
+geotorch==0.3.0
+#A.H.Williams' commit on December 13 is used. If want to use master branch:
+#git+git://github.com/ahwillia/netrep@master#egg=netrep 
+git+git://github.com/ahwillia/netrep@bc98a59f60aa87eef0935fff8bf7708d354935be#egg=netrep
