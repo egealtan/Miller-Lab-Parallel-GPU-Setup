@@ -1,4 +1,6 @@
 # %%
+
+# Try and see if the dev environment works properly.
 from netrep.metrics import LinearMetric
 
 # Rotationally invariant metric (fully regularized).
